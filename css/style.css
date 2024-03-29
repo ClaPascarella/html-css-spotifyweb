@@ -7,6 +7,12 @@
 body {
     font-family: sans-serif;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 /******** HEADER********/
 header {
     background-color: rgb(8, 11, 18);
@@ -36,8 +42,8 @@ header {
 
 /******MAIN******/
    .container-big {
-    height: 80vh;
-    background-color: rgb(20, 25, 34);
+     height: 80vh;
+     background-color: rgb(20, 25, 34);
    }
 
    .nav-spotify {
@@ -56,7 +62,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 18rem;
+    margin-top: 19rem;
    }
 
    .logo-spotify {
@@ -67,20 +73,26 @@ header {
     
    .logo {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
    }
 
    .logo2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: grey;
     margin-top: 1rem;
    }
 
    .logo3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: grey;
     margin-left: 0.2rem;
+   }
+
+   .logo4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
    }
 
    #spotify {
@@ -93,26 +105,133 @@ header {
     display: none;
    }
 
+   .writtwn-navbar {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    display: none;
+    color: grey;
+   }
+
+   .playlist {
+    display: none;
+    height: 10rem;
+   }
+
+   .title-playlist {
+      display: flex;
+      align-items: center;
+      color: white;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      display: none;
+    }
+
+    .square {
+        width: 30px;
+        height: 30px;
+        background-color: grey;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .plus {
+        font-size: 1.7rem;
+        margin-left: 3px;
+        display: flex;
+       
+    }
+
+    .written {
+        color: grey;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        width: 150px;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .name-playlist {
+        color: grey;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        line-height: 1.5rem;
+        list-style-type: none;
+    }
+
+    hr {
+        margin-top: 0.5rem;
+        color: grey;
+        margin-right: 1rem;
+        display: none;
+    }
+
+    .download {
+        color: grey;
+        font-size: 0.7rem;
+        margin-left: 0.7rem;
+        margin-top: 2px;
+        display: none;
+    }
+
+    .user {
+        color: white;
+        margin-left: 0.5rem;
+        display: none;
+    }
+
+    .musical-genres {
+        height: 80vh;
+        
+        margin-left: 2.2rem;
+        margin-top: -33.5rem;
+    }
+   
+
+    .searchformusic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .written-musical {
+        color: grey;
+        font-size: 0.8rem;
+    }
+        
+
+        
+       
+
+
+
    
    
     /******FOOTER*******/
     footer {
         width: 100%;
-        height: 7.5vh;
+        height: 7.7vh;
         background-color: rgb(40, 40, 40);
         position: sticky;
     }
 
 /******************* RESPONSIVE ***********************/
-/* Tablet */
-@media all and (min-width: 700px) {
+/* Smal Tablet */
+@media all and (min-width: 500px) {
 
     .container-header {
         max-width: 100%;
     }
 
     .nav-spotify {
-        width: 15%;
+        width: 14rem;
         height: 80vh;
         background-color: black;
     }
@@ -128,7 +247,7 @@ header {
         display: flex;
         align-items:stretch;
         flex-direction: column;
-        margin-top: 17rem;
+        margin-top: 6rem;
         margin-left: 1rem;
     }
 
@@ -142,6 +261,123 @@ header {
         margin-top: 0.5rem;
     }
 
+    .writtwn-navbar {
+        display: block;
+    }
+
+    .title-playlist {
+        display: block;
+    }
+    
+    .playlist {
+        display: block;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .user {
+        display: block;
+    }
+
+    .download {
+        display: block;
+    }
+
+    .musical-genres {
+        height: 80vh;
+        
+        margin-left: 14rem;
+        margin-top: -33.5rem;
+    }
+
+   
+   
+       
+
+
+   
+
+}
+
+
+/* Tablet */
+@media all and (min-width: 700px) {
+
+    .container-header {
+        max-width: 100%;
+    }
+
+    .nav-spotify {
+        width: 14rem;
+        height: 80vh;
+        background-color: black;
+    }
+
+    .col-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 1rem;
+    }
+
+    .col-logo2 {
+        display: flex;
+        align-items:stretch;
+        flex-direction: column;
+        margin-top: 6rem;
+        margin-left: 1rem;
+    }
+
+    .logo-spotify {
+        display: none;
+    }
+
+    #spotify {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .writtwn-navbar {
+        display: block;
+    }
+
+    .title-playlist {
+        display: block;
+    }
+    
+    .playlist {
+        display: block;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .user {
+        display: block;
+    }
+
+    .download {
+        display: block;
+    }
+
+    .musical-genres {
+        height: 80vh;
+        
+        margin-left: 14rem;
+        margin-top: -33.5rem;
+    }
+
+   
+   
+       
+
+
+   
+
 }
 
 /* Desktop */
@@ -152,7 +388,7 @@ header {
     }
 
     .nav-spotify {
-        width: 20%;
+        width: 14rem;
         height: 80vh;
         background-color: black;
     }
@@ -167,13 +403,59 @@ header {
         display: flex;
         align-items:stretch;
         flex-direction: column;
-        margin-top: 17rem;
+        margin-top: 6rem;
     }
     
     .logo-spotify {
         display: none;
         width: 20%;
     } 
+
+    .writtwn-navbar {
+        display: block;
+    }
+
+    .title-playlist {
+        display: block;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .user {
+        display: block;
+    }
+
+    .download {
+        display: block;
+    }
+
+    .searchformusic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 15rem;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .musical-genres {
+        height: 80vh;
+        
+        margin-left: 14rem;
+        margin-top: -33.5rem;
+    }
+
+    
+
+   
 
 }
 
@@ -185,7 +467,7 @@ header {
     }
 
     .nav-spotify {
-        width:25%;
+        width: 14rem;
         height: 80vh;
         background-color: black;
     }
@@ -200,13 +482,55 @@ header {
         display: flex;
         align-items:stretch;
         flex-direction: column;
-        margin-top: 17rem;
+        margin-top: 11rem;
     }
+    
 
   
     .logo-spotify {
         display: none;
         width: 25%;
-    }  
+    } 
+    
+    .writtwn-navbar {
+        display: block;
+    }
+
+    .title-playlist {
+        display: block;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .user {
+        display: block;
+    }
+
+    .download {
+        display: block;
+    }
+
+    .musical-genres {
+        height: 80vh;
+        
+        margin-left: 14rem;
+        margin-top: -38rem;
+    }
+    
+
+    
+
+    footer {
+        width: 100%;
+        height: 9.2vh;
+        background-color: rgb(40, 40, 40);
+        position: sticky;
+    }
 
 }
