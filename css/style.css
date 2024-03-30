@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
 /******** HEADER********/
 header {
@@ -195,17 +196,110 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         
     }
 
     .written-musical {
         color: grey;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        margin-top: 1rem;
     }
+
+    .recently-played {
+        color: white;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /******ALBUM*******/
+    .container-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+       gap: 10px;
+    }
+    .container-album {
+        width: 150px;
+        height: 230px;
+
+    }
+
+    .title-album {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 3rem;
+    }
+
+    .artist {
+        color: gray;
+        font-size: 0.7rem;
+        margin-left: 4.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .img-album {
+        background-image: url(../img/metal_lifting.jpg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+  /******Album 2******/
+    .img-album2 {
+      background-image: url(../img/stranger.jpeg);
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+
+    .title-album2 {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 1.5rem;
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .artist2 {
+        color: gray;
+        font-size: 0.7rem;
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        width: 150px;
+    }
+
+    /*******ALBUM 3******/
+
+    .img-album3 {
+        background-image: url(../img/aquietplace.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+     /*******ALBUM 4******/
+
+     .img-album4{
+        background-image: url(../img/split.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+  
         
+
 
         
        
@@ -292,6 +386,17 @@ header {
         margin-top: -33.5rem;
     }
 
+    .searchformusic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+
    
    
        
@@ -371,6 +476,17 @@ header {
         margin-top: -33.5rem;
     }
 
+    .searchformusic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+
    
    
        
@@ -440,9 +556,9 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 1rem;
-        margin-left: 15rem;
+        margin-left: 12rem;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         
     }
 
@@ -521,6 +637,17 @@ header {
         
         margin-left: 14rem;
         margin-top: -38rem;
+    }
+
+    .searchformusic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        justify-content: center;
+        gap: 15px;
+        
     }
     
 
