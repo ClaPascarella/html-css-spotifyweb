@@ -45,12 +45,22 @@ header {
    .container-big {
      height: 80vh;
      background-color: rgb(20, 25, 34);
+     overflow-y: scroll;
+   }
+
+   .container-big::-webkit-scrollbar {
+    display: none;
    }
 
    .nav-spotify {
      width: 10%;
      height: 80vh;
      background-color: black;
+     overflow-y: scroll;
+   }
+
+   .nav-spotify::-webkit-scrollbar {
+    display: none;
    }
 
    .col-logo {
@@ -87,7 +97,7 @@ header {
    .logo3 {
     font-size: 1rem;
     color: grey;
-    margin-left: 0.2rem;
+    align-items: flex-start;
    }
 
    .logo4 {
@@ -220,7 +230,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-       gap: 10px;
+        gap: 10px;
     }
     .container-album {
         width: 150px;
@@ -297,24 +307,215 @@ header {
         margin-left: 1rem;
         margin-top: 1rem;
     }
-  
+
+    .title-album4 {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 5rem;
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+     /*******ALBUM 5******/
+
+     .img-album5{
+        background-image: url(../img/cure.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .title-album5 {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+     /*******ALBUM 6******/
+
+     .img-album6 {
+        background-image: url(../img/sinister.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .title-album6 {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 4rem;
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    /******PLAYLIST JOHN DOE******/
+    .for-johndoe {
+        color: white;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .most-listened {
+        font-size: 0.7rem;
+        color: grey;
+        margin-top: 0.5rem;
+    }
+    /* PLAYLIST1 */
+    .img-album7 {
+        background-image: url(../img/radar.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* PLAYLIST2 */
+
+    .img-album8 {
+        background-image: url(../img/mixdaily.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    /*****MOST ARTIST*********/
+
+    .most-artist {
+        color: white;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+    .img-album9{
+        background-image: url(../img/youg.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 50%;
+    }
+
+    .title-album9 {
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 3rem;
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    /*****ALBUM 10******/
+
+    .img-album10 {
+        background-image: url(../img/einaudi.jpeg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 50%;
         
-
-
+    }
         
-       
-
-
-
-   
-   
-    /******FOOTER*******/
+/******FOOTER*******/
     footer {
         width: 100%;
         height: 7.7vh;
         background-color: rgb(40, 40, 40);
         position: sticky;
     }
+
+    .container-footer {
+        width: 100%;
+        height: 50px;
+        margin-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-small {
+        width: 220px;
+        height: 50px;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .img-small {
+        background-image: url(../img/sinister.jpeg);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+       
+    }
+
+    .title-footer {
+        font-size: 0.8rem;
+        color: white;
+        margin-left: 0.5rem;
+    }
+
+    .artist-footer {
+        font-size: 0.6rem;
+        color: gray;
+        margin-left: 0.5rem;
+    }
+
+    .logo-footer {
+        color: gray;
+        margin-left: 3rem;
+    }
+
+    .logo-footer1 {
+        color: gray;
+        margin-left: 1rem;
+    }
+
+    .container-small2 {
+        width: 220px;
+        height: 50px;
+        margin-left: 1rem;
+        display: flex;
+        margin-left: 5rem;
+        display: flex;
+       
+        
+        
+    }
+
+    .logo-footer2 {
+        color: white;
+        margin-left: 1rem;
+    }
+
+    .logo-footer3 {
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .hr2 {
+        color: gray;
+        width: 250px;
+    }
+
+/******ANIMATIONS*******/
+
+.searchformusic, .col-logo, .col-logo2, .playlist, :hover{
+    color: white;
+    
+    
+}
+
 
 /******************* RESPONSIVE ***********************/
 /* Smal Tablet */
@@ -333,13 +534,13 @@ header {
     .col-logo {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
         margin-left: 1rem;
     }
 
     .col-logo2 {
         display: flex;
-        align-items:stretch;
+        align-items: flex-start;
         flex-direction: column;
         margin-top: 6rem;
         margin-left: 1rem;
@@ -423,13 +624,13 @@ header {
     .col-logo {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
         margin-left: 1rem;
     }
 
     .col-logo2 {
         display: flex;
-        align-items:stretch;
+        align-items: flex-start;
         flex-direction: column;
         margin-top: 6rem;
         margin-left: 1rem;
@@ -512,12 +713,12 @@ header {
     .col-logo {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
     }
 
     .col-logo2 {
         display: flex;
-        align-items:stretch;
+        align-items:flex-start;
         flex-direction: column;
         margin-top: 6rem;
     }
@@ -591,7 +792,7 @@ header {
     .col-logo {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
     }
 
     .col-logo2 {
