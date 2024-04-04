@@ -41,6 +41,11 @@ header {
     text-align: center;
 }
 
+.btn-white :hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
 /******MAIN******/
    .container-big {
      height: 80vh;
@@ -97,7 +102,7 @@ header {
    .logo3 {
     font-size: 1rem;
     color: grey;
-    align-items: flex-start;
+    margin-right: 1.5rem;
    }
 
    .logo4 {
@@ -172,7 +177,7 @@ header {
         list-style-type: none;
     }
 
-    hr {
+    .hr1 {
         margin-top: 0.5rem;
         color: grey;
         margin-right: 1rem;
@@ -258,7 +263,24 @@ header {
         height: 150px;
         margin-left: 1rem;
         margin-top: 1rem;
+        
     }
+
+    .play-album{
+        font-size: 5rem;
+        position: absolute;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        color: white;
+        opacity: 0;
+        
+    }
+
+    .play-album :hover {
+        opacity: 1;
+    }
+        
+
 
   /******Album 2******/
     .img-album2 {
@@ -433,6 +455,7 @@ header {
         height: 7.7vh;
         background-color: rgb(40, 40, 40);
         overflow: hidden;
+        z-index: 1;
     }
 
     .container-footer {
@@ -595,11 +618,13 @@ header {
 
 /******ANIMATIONS*******/
 
-.searchformusic, .col-logo, .col-logo2, .playlist, :hover{
+.searchformusic :hover, .col-logo :hover, .col-logo2 :hover, .playlist :hover{
     color: white;
-    
-    
 }
+
+
+    
+    
 
 
 /******************* RESPONSIVE ***********************/
@@ -653,7 +678,7 @@ header {
         display: block;
     }
 
-    hr {
+    .hr1 {
         display: block;
     }
 
@@ -743,7 +768,7 @@ header {
         display: block;
     }
 
-    hr {
+    .hr1 {
         display: block;
     }
 
@@ -779,7 +804,8 @@ header {
         width: 100%;
         height: 9.2vh;
         background-color: rgb(40, 40, 40);
-        position: sticky;
+        overflow: hidden;
+        z-index: 1;
     }
        
 
@@ -831,7 +857,7 @@ header {
         display: block;
     }
 
-    hr {
+    .hr1 {
         display: block;
     }
 
@@ -866,7 +892,8 @@ header {
         width: 100%;
         height: 9.2vh;
         background-color: rgb(40, 40, 40);
-        position: sticky;
+        overflow: hidden;
+        z-index: 10;
     }
 
    
@@ -894,7 +921,7 @@ header {
 
     .col-logo2 {
         display: flex;
-        align-items:stretch;
+        align-items: flex-start;
         flex-direction: column;
         margin-top: 11rem;
     }
@@ -918,7 +945,7 @@ header {
         display: block;
     }
 
-    hr {
+    .hr1 {
         display: block;
     }
 
@@ -949,13 +976,14 @@ header {
     }
     
 
-    
+   
 
     footer {
         width: 100%;
         height: 9.2vh;
         background-color: rgb(40, 40, 40);
-        position: sticky;
+       overflow: hidden;
+       z-index: 10;
     }
 
 }
