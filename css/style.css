@@ -102,7 +102,7 @@ header {
    .logo3 {
     font-size: 1rem;
     color: grey;
-    margin-right: 1.5rem;
+    
    }
 
    .logo4 {
@@ -128,6 +128,8 @@ header {
     display: none;
     color: grey;
    }
+
+   
 
    .playlist {
     display: none;
@@ -217,6 +219,8 @@ header {
         
     }
 
+   
+
     .written-musical {
         color: grey;
         font-size: 0.6rem;
@@ -266,6 +270,11 @@ header {
         
     }
 
+    .img-album:hover {
+        background-color: black;
+        opacity: 0.5;
+    }
+
     .play-album{
         font-size: 5rem;
         position: absolute;
@@ -276,7 +285,7 @@ header {
         
     }
 
-    .play-album :hover {
+    .play-album:hover {
         opacity: 1;
     }
         
@@ -290,6 +299,11 @@ header {
       height: 150px;
       margin-left: 1rem;
       margin-top: 1rem;
+    }
+
+    .img-album2:hover {
+        background-color: black;
+        opacity: 0.5;
     }
 
     .title-album2 {
@@ -319,6 +333,11 @@ header {
         margin-top: 1rem;
     }
 
+    .img-album3:hover {
+        background-color: black;
+        opacity: 0.5;
+    }
+
      /*******ALBUM 4******/
 
      .img-album4{
@@ -336,6 +355,11 @@ header {
         margin-left: 5rem;
         width: 150px;
         font-size: 0.9rem;
+    }
+
+    .img-album4:hover {
+        background-color: black;
+        opacity: 0.5;
     }
 
      /*******ALBUM 5******/
@@ -357,6 +381,11 @@ header {
         font-size: 0.9rem;
     }
 
+    .img-album5:hover {
+        background-color: black;
+        opacity: 0.5;
+    }
+
      /*******ALBUM 6******/
 
      .img-album6 {
@@ -366,6 +395,11 @@ header {
         height: 150px;
         margin-left: 1rem;
         margin-top: 1rem;
+    }
+
+    .img-album6:hover {
+        background-color: black;
+        opacity: 0.5;
     }
 
     .title-album6 {
@@ -575,6 +609,8 @@ header {
         border-top: 2px solid white;
         position: relative;
     }
+    
+   
 
     .container-small3 {
         width: 200px;
@@ -623,7 +659,12 @@ header {
 }
 
 
-    
+  .underline:hover, .underline2:hover, .underline3:hover, .underline4:hover,
+    .underline5:hover, .underline6:hover {
+        text-decoration: underline greenyellow;
+        text-decoration-thickness: 0.2rem;
+        text-underline-offset: 8px;
+    }   
     
 
 
@@ -639,6 +680,7 @@ header {
         width: 14rem;
         height: 80vh;
         background-color: black;
+        
     }
 
     .col-logo {
@@ -650,10 +692,14 @@ header {
 
     .col-logo2 {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
         margin-top: 6rem;
         margin-left: 1rem;
+    }
+
+    .logo3 {
+        margin-right: 1.5rem;
     }
 
     .logo-spotify {
@@ -709,7 +755,13 @@ header {
     }
 
    
-   
+    footer {
+        width: 100%;
+        height: 7.7vh;
+        background-color: rgb(40, 40, 40);
+        
+        z-index: 1;
+    }
        
 
 
